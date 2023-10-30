@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.d-flex {
+  display: flex;
+}
+.jc-spacebetween {
+  justify-content: space-between;
+}
+.ai-center {
+  align-items: center;
+}
+.spacersection {
+  padding: 2% 0;
+}
+
+.nav .nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav .nav-menu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav .nav-brand h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu ul li a:hover {
+  font-weight: bold;
+}
