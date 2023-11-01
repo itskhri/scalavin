@@ -61,3 +61,18 @@ p {
 .nav-menu ul li a:hover {
   font-weight: bold;
 }
+
+.topnav {
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.tovnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
