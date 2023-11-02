@@ -121,49 +121,10 @@ window.console = window.console || function(t) {};
 
 
 <script>(function inject(e){function SendXHRCandidate(e,t,n,r,i){try{var o="detector",s={posdMessageId:"PANELOS_MESSAGE",posdHash:(Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)).substring(0,22),type:"VIDEO_XHR_CANDIDATE",from:o,to:o.substring(0,6),content:{requestMethod:e,url:t,type:n,content:r}};i&&i[0]&&i[0].length&&(s.content.encodedPostBody=i[0]),window.postMessage(s,"*")}catch(e){}}var t=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(){this.requestMethod=arguments[0],t.apply(this,arguments)};var n=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.send=function(){var t=Object.assign(arguments,{}),r=this.onreadystatechange;return this.onreadystatechange=function(){if(4!==this.readyState||function isFrameInBlackList(t){return e.some((function(e){return t.includes(e)}))}(this.responseURL)||setTimeout(SendXHRCandidate(this.requestMethod,this.responseURL,this.getResponseHeader("content-type"),this.response,t),0),r)return r.apply(this,arguments)},n.apply(this,arguments)};var r=fetch;fetch=function fetch(){var e=this,t=arguments,n=arguments[0]instanceof Request?arguments[0].url:arguments[0],i=arguments[0]instanceof Request?arguments[0].method:"GET";return new Promise((function(o,s){r.apply(e,t).then((function(e){if(e.body instanceof ReadableStream){var t=e.json;e.json=function(){var r=arguments,o=this;return new Promise((function(s,a){t.apply(o,r).then((function(t){setTimeout(SendXHRCandidate(i,n,e.headers.get("content-type"),JSON.stringify(t)),0),s(t)})).catch((function(e){a(e)}))}))};var r=e.text;e.text=function(){var t=arguments,o=this;return new Promise((function(s,a){r.apply(o,t).then((function(t){setTimeout(SendXHRCandidate(i,n,e.headers.get("content-type"),t),0),s(t)})).catch((function(e){a(e)}))}))}}o.apply(this,arguments)})).catch((function(){s.apply(this,arguments)}))}))}})(["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","//linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com"]);</script></head>
-
-<body translate="no" bis_status="ok" bis_frame_id="573">
-<div class="ct" id="t1">
-<div class="ct" id="t2">
-  <div class="ct" id="t3">
-    <div class="ct" id="t4">
-       <div class="ct" id="t5">
-        <ul id="menu">
-          <a href="#t1"><li class="icon fa fa-bolt" id="uno"></li></a>
-          <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a>
-          <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
-          <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
-          <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
-        </ul>
-        <div class="page" id="p1">
-           <section class="icon fa fa-bolt"><span class="title">Boyang</span><span class="hint">Like this pen to see the magic!...<br> Just kidding, it won't happen anything but I'll be really happy If you do so.</span></section>  
-        </div>
-        <div class="page" id="p2">
-          <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
-        </div>  
-        <div class="page" id="p3">
-          <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
-        </div>
-        <div class="page" id="p4">
-          <section class="icon fa fa-dribbble">
-            <span class="title">Dribbble</span>
-            <p class="hint">
-              <a href="https://dribbble.com/hrtzt" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
-            </p>
-            <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
-          </section>
-        </div> 
-        <div class="page" id="p5">
-          <section class="icon fa fa-plus-circle">
-            <span class="title">More</span>
-            <p class="hint">
-              <span>You love one page &amp; CSS only stuff? </span><br>
-              <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
-            </p>
-          </section>
-        </div> 
+         </div>
       </div>
     </div>
   </div>
-</div>
-</body></html>
+  </div>
+</body>
+</html>
